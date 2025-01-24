@@ -1,0 +1,48 @@
+<div class="feedback-form" [formGroup]="feedbackForm">
+    <div class="forms">
+    <div>
+      <mat-form-field appearance="fill">
+      <mat-label>Choose the doctor for your feedback!</mat-label>
+      <select matNativeControl required [formControl]="doctorr">
+        <option value="Angelova">Angelova</option>
+        <option value="Petrov">Petrov</option>
+      </select>
+    </mat-form-field>
+    </div>
+    <div  [formGroup]="feedbackForm"  >
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your feedback in free form here!</mat-label>
+      <textarea matInput [formControl]="fbText"></textarea>
+    </mat-form-field>
+  </div>
+  <div  [formGroup]="feedbackForm"  >
+    <mat-form-field appearance="fill">
+        <label>Courteus Service?</label>
+        <input matInput [formControl]="fbCustService">
+      </mat-form-field>
+    </div>
+   
+    <div  [formGroup]="feedbackForm"  >
+      <mat-form-field appearance="fill">
+        <label>Quality of work done!</label>
+        <input matInput [formControl]="fbQuality">
+      </mat-form-field>
+    </div>
+  </div>
+
+
+   
+    <div> <img class="image" src="url(../../../../assets/carolinelmAngelova.jpg" >  </div> 
+
+    <div class="mat-button">
+      <button class="mat-button mat-raised-button" (click)="sendFeedback()">
+        <mat-icon>person_add</mat-icon>
+        Submit Feedback!
+      </button>
+
+ 
+
+
+
+   
+ 

@@ -1,0 +1,10 @@
+<!-- <button class="button" mat-raised-button (click)="appointCheck(patient!)"> Click here to check your Appointment details! </button> -->
+<h2 class="hclass"> Your Appointment Info is below. Contact us in case you need to cancel! </h2>
+<h3 class="hclass" >Hey {{patient.email}} !</h3>
+<h3 class="hclass">Your appointment is on {{patient.appointmentDate!}}</h3>
+
+<p><label class="hclass" for="cancel">Please add a line if you want to cancel your appointment!</label></p>
+<textarea class="hclass" id="cancel" name="cancel" rows="3" cols="30" #cancellationReason></textarea>
+<button class="button" mat-raised-button (click)="cancelApp(cancellationReason.value)"> Click here to cancel you Appointment! </button>
+
+

@@ -1,0 +1,32 @@
+
+<div class="signup-form" [formGroup]="signupForm"  >
+  <div class="section">
+    <mat-form-field>
+      <label>Email</label>
+      <input matInput type="email" [formControl]="email">
+    </mat-form-field>
+  </div>
+  <div class="section">
+    <mat-form-field>
+      <label>Password</label>
+      <input matInput type="password" [formControl]="password">
+    </mat-form-field>
+  </div>
+  <div class="section">
+    <mat-form-field>
+      <label>Phone</label>
+      <input matInput type="phone" [formControl]="phone">
+    </mat-form-field>
+  </div>
+  <p>
+    <mat-checkbox class="section" [formControl]="consent"
+      >I agree with the <a href="#">Terms and Conditions</a>, governing
+      this site.</mat-checkbox>
+  </p>
+  <div class="mat-button mat-raised-button">
+    <button class="mat-button" (click)="createUser()">
+      <mat-icon >person_add</mat-icon>
+      Register
+    </button>
+  </div>
+</div>

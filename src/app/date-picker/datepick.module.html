@@ -1,0 +1,26 @@
+<div style="margin: auto; max-width: 100%; " >
+
+    <h2 class="header">View appointment options</h2>
+<div style="display: flex;  gap : 0; margin-left:10rem;">
+  <img src="../../assets/nathan-dumlao-unsplash.jpg" width="1100 em" height="460 em" class="image">
+    <mat-form-field appearance="fill" class="mat-form-field">
+    <button mat-raised-button (click)="myDatePicker.open()">Open</button>
+    <input  matInput [matDatepicker]="myDatePicker"  [matDatepickerFilter]="dateFilter"
+    (dateChange)="handleDate($event)" >
+    <mat-datepicker-toggle  [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker ></mat-datepicker>
+  </mat-form-field>
+</div>
+
+</div>
+<!-- <div class="example-events">
+  <div *ngFor="let e of events">{{e}}</div>
+  <div> {{selectedDate}}</div>
+</div> -->
+<div *ngIf="selectedDate">
+  <a id="appointmentTableAnchor"></a>
+  <app-appointment [date]="selectedDate"> </app-appointment>
+</div>
+
+<footer> Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/s/photos/calendar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</footer>

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    /* background-image: url(../../assets/bkground3.jpg); */
+    background-image: radial-gradient(rgb(236, 245, 241), rgb(247, 241, 246),rgb(232, 232, 243)); 
+}
+
+.feedback-form{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    margin-left: 19em;
+    margin-right: 3em;
+    gap: 3;
+    flex-grow: 2;
+    font-size: medium;
+    align-content: flex-start   ;
+ 
+}
+.image{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+   flex-shrink: 1;
+    flex-wrap: 1;
+    height: 50em ;
+    width : 50em ; 
+}
+
+.mat-button{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: flex-end;
+    align-items: flex-end;
+    margin: 1em;
+    flex-direction: column;
+    flex-wrap: 1;
+    width: auto;
+}

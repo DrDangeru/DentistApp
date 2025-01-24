@@ -1,0 +1,77 @@
+.signup-form {
+  display: flex;
+  flex : 1 ;
+  /* all items with flex 1 have the same size */
+  padding: 6em 9em;
+  max-width: 100%;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  background-image: radial-gradient(rgb(183, 253, 230), rgb(223, 211, 221),rgb(202, 202, 219));
+}
+
+.signup-form .section {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1em 1em;
+  background: #e6e5ec;
+  background-image: url("//src/assets/quangtringuyenUnsplash.jpg");
+}
+
+.mat-button {
+  
+  background-color: rgb(183, 253, 230);
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  justify-content: center;
+  height: 50%;
+  flex-direction: row;
+  border-radius: 22px;
+  padding: 1em 1em  ;
+
+  
+}
+.button:focus {
+  outline-color: transparent;
+  outline-style:solid;
+  box-shadow: 0 0 0 2px #5a01a7;
+  transition: 0.8s;
+}
+
+.form
+{
+
+    position: absolute;
+    top: 80%;
+    margin-top: 5px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0.03rem;
+    text-align: center;
+    border: none;
+    font-size: 0.9vw;
+
+}
+.form-group
+{
+  
+    position: relative;
+    top: 77%;
+
+    height: 40px;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: left;
+    padding: 2rem;
+
+
+}
+
+.btn{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

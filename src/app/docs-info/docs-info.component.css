@@ -1,0 +1,98 @@
+.card {
+    display: flex;
+    width: 12.5rem;
+    height:12.5rem;
+    background-color: whitesmoke;
+    padding: 0.2rem;
+    border: 1px solid rgb(207, 106, 106);
+    border-radius:  .25rem;
+ }
+
+.summary{
+  font-size: 0.9rem;
+  align-self: start;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: .4rem;
+}  
+
+  .card-header1 {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+  
+  .card-header2 {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+  }
+
+  .card-footer{
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+}
+
+  .docImagePetrov{
+  display: flex;  
+  flex-direction: row;
+  flex-basis: 25em;
+  flex-grow: 0;
+  min-width : 27.5em;
+  max-width: 30em;
+  min-height : 30em;
+  max-height: 30em;
+  justify-content: center;
+   clip-path: polygon(6% 0, 0 94%, 25% 100%, 90% 85%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 90%, 100% 3%);
+   /* clip-path: circle(0px at top left); */
+   transition: clip-path ease-in-out 1000ms;
+  }
+ 
+  .docImageAngelova{
+    display: flex;  
+    flex-direction: row;
+    flex-basis: 25em;
+    flex-grow: 0;
+    min-width : 25em;
+    max-width: 28em;
+    min-height : 30em;
+    max-height: 30em;
+    justify-content: center;
+    clip-path: polygon(0 5%, 0 94%, 25% 100%, 90% 85%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 90%, 100% 0);
+    /* clip-path: circle(0px at top left); */
+    transition: clip-path ease-in-out 1000ms;
+    }
+
+  .card-grid{
+    display: flex;
+    gap: 2rem;
+    margin-left: 5rem;
+    justify-content: center;
+   } 
+
+@media (max-width : 1005px){
+    .card-grid{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      align-self: center;
+      
+    }
+}
+
+
+  .btn:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.7s;
+}
+  .btn.btn-outline{
+    color: none;
+    border: 2px solid black;
+   
+  
+  }
+  
+  .btn.btn-outline:focus, .btn.btn-outline:hover {
+    background: hsl(200, 51%, 30%);
+  }
+

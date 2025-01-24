@@ -1,0 +1,53 @@
+.mat-toolbar {
+    size: 45%;
+    font: 500 32px/30px Roboto, "Helvetica Neue", sans-serif;
+    display: inline-flex;
+    border : solid 1px rgb(144, 121, 226);
+    margin-right: 1rem;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    color: rgba(0, 52, 65, 0.85);
+    clip-path: polygon(3% 0, 97% 0, 100% 100%, 0% 100%);
+    vertical-align: middle;
+    }
+
+.main{
+    text-align: center;
+    display: flexbox;
+    size: 50%;
+    justify-content: center;
+    background-color: rgb(188, 231, 236);
+}
+
+.mat-raised-button{
+    margin: 1 em, 3 em , 1 em , 1 em;
+    border-radius: 25px;
+    width: 180px;
+    border : solid 1px rgb(129, 226, 121);
+}
+
+.mat-raised-button:hover {
+    background-color: #ad56a6;
+    box-shadow: 0px 14px 19px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-6px);
+  }
+
+.foot {
+    content: "";
+    margin-top: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+    width: auto;
+    height: 70px;
+    background-color: #c9ddf0;
+    vertical-align: middle;
+    /* background-image:  radial-gradient(rgb(175, 175, 206),rgb(202, 173, 173)); */
+    /* clip-path : poligon ( 50% 0% , 100% 0 , 100% 65%, 50% 100%, 0 65%,0 0  ) */
+}
+/* Looks not great, going without it for now!
+.mat-app-background{
+     background-image:  url(/assets/wave.svg);
+    /* background-color: rgb(248, 247, 245); */
+

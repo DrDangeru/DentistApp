@@ -1,0 +1,21 @@
+<div class="appointment-component">
+
+  <h4 class="Caption"> Reserve your appointment! You are viewing available appointments for {{this.viewDate}}</h4>
+  <div class="appointmentTable" id="appointmentTable">
+    <div *ngIf="schedule" class="tileSlot" #sched >
+      <div *ngFor="let timeSlot of schedule.timeslots;" style=" display: flex; margin: 22px; border: 2px solid red ;  
+       background-image: radial-gradient( rgb(111, 179, 211), rgb(204, 161, 161) );">
+
+        <app-slot [schedule]="schedule" [patient]="patient!" [timeSlot]="timeSlot"></app-slot>
+        <!-- <div *ngIf="scrollIntoView()"></div> -->
+        <!--execute scrollIntoView-->
+
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #loading>
+  <span class="loading"> . . Loading . . . . Loading . . . . Loading . . </span>
+</ng-template>

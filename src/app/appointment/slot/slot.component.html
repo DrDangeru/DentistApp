@@ -1,0 +1,22 @@
+<div class="time-slot" [class.taken]="timeSlot.taken">
+
+  <br><div>{{timeSlot.doctorName}}</div> 
+  <br><div>{{timeSlot.time}}</div> <br>
+  <br><button class="button" (click)="makeAppointment()"  *ngIf="!timeSlot.taken"
+  [disabled]="timeSlot.taken"
+  matTooltip="make an appointment for {{timeSlot.time}}"
+  mat-raised-button color="secondary" mat-button> 
+<mat-icon>book_online</mat-icon> 
+</button> 
+  <div class="typeOfWork"> <br>
+    <form> <!-- use form to separate from other slots --> 
+      <label (click)="setTypeOfWork('Cleaning')"> 
+        <input type="radio" name="typeOfWork" value="Cleaning" selected="false">Cleaning</label>
+        <br>
+        <!-- </form> had to do them as 1 group or both can be selected but not unselected
+    <form>  -->
+      <label (click)="setTypeOfWork('Dental Procedure')">
+       <input type="radio" name="typeOfWork" value="Dental Procedure" selected="false">Dental Procedure</label>
+    </form>
+  </div>
+</div>

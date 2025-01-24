@@ -1,0 +1,41 @@
+<!-- <h3 style="color: goldenrod; font-size: large; align-self: flex-end; align-content: center; " >Login Page</h3> -->
+
+    <div class="signInForm" [formGroup]="signInForm"  >
+ <div class="formz">
+<mat-form-field>
+    <label>Email</label><br>
+    <input matInput type="email" [formControl]="email">
+  </mat-form-field>
+  </div>
+<div class="formz">
+  <mat-form-field>
+    <label>Password</label><br>
+    <input matInput type="password" [formControl]="password">
+  </mat-form-field>
+</div>
+
+<div class="formz">
+  <button class="mat-button mat-raised-button" (click)="loginEmailPassword(email,password)">
+    <mat-icon>account_box </mat-icon>
+    Login
+</button>
+<button class="mat-button mat-raised-button" (click)="signInGoogle()">
+  <mat-icon>login</mat-icon>
+  Login with Google
+</button>
+</div>
+
+<div class="formz">
+  <button class="mat-button mat-raised-button" (click)="forgotPassword()">
+     <mat-icon>fingerprint</mat-icon>
+   Reset Password </button>
+   <button class="mat-button mat-raised-button" [routerLink]="['/app-signup']">
+    <mat-icon>person_add </mat-icon>
+    Sign Up Now
+   </button>
+</div>
+
+
+<div style="position: below">
+<marquee>If you have not signed up, do so!</marquee>
+</div>

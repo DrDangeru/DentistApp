@@ -1,0 +1,80 @@
+.tileSlot {
+  display: flex;
+  grid-template-rows: 4;
+  min-height: 220px;
+  min-width: 255px; 
+  justify-content: center;
+  
+  margin-top: 0.5 rem;
+  margin-left: auto;
+  justify-content: space-between;
+  margin-bottom: 1 rem;
+  outline-color: transparent;
+  outline-style:solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+  transition: 0.8s;
+}
+
+
+.mat-raised-button:hover {
+  background-color: #ad56a6;
+  box-shadow: 0px 14px 19px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+.Caption {
+  display: flex;
+  align-items: center;
+  margin-left: 30em;
+  font-weight: 500;
+  font-stretch: normal;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.header {
+  align-self: center;
+  text-align: center;
+}
+
+@media (max-width : 1005px) {
+  
+  .tileSlot {
+    margin-left: 12rem ;
+    max-width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+  }
+  .mat-raised-button:hover{
+    flex-direction: column-reverse;
+  }
+  .appointmentTable{
+    max-width: 80%;
+  }
+  .Caption{
+    margin-left: 12rem ;
+    display: grid;
+    align-self: center;
+    align-content: center;
+  }
+  
+}
+
+@media (min-width : 1006px) {
+  .tileSlot {
+    display: flex;
+    grid-template-rows: 4;
+  }
+}
+
+.appointmentTable {
+   display: border-box;  
+   margin: 0.5em;
+   border: 2px solid rgb(194, 33, 33);
+   align-content: center;
+   max-width: 100%;
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dentist-3": {
+      "hosting": {
+        "dentist3": [
+          "dentist-3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dentist-3"
+  }
+}

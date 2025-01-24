@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: none;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: row;
+    grid-row: span;
+    padding: 2em 6em;
+    max-width: 100%;
+    justify-items: right;
+    justify-content: space-around;
+    align-content: right;
+  }
+  
+   .formz {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-items: stretch;
+    justify-content: space-around;
+    align-content: center;
+    padding: .6em .6em;
+    background-color: #e6f3ff;
+  } 
+    
+  .mat-button mat-raised-button {
+    background-color: rgb(80, 51, 7);
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 32%;
+    border-radius: 22px;
+    padding: .8em .1em  ;
+  
+  }
+  
+  .mat-button {
+    background-color: rgb(183, 253, 230);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    width: 32%;
+    border-radius: 20px;
+  padding: .8em .1em  ;
+  }

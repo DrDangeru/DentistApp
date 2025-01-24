@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.image{
+    margin-left: 9rem;
+}
+
+@media (max-width : 1005px){
+        .image{
+            margin: 0;
+        }
+    }
+    
+.header{
+    display: grid;
+    margin-top: 1rem;
+    margin-left: 0rem; 
+   justify-content: center;
+}
+
+.mat-form-field{
+background-color:  rgb(230, 234, 237) ;
+}
+  
